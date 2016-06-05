@@ -1,0 +1,239 @@
+@import "common";
+
+.app-wrap  {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+
+}
+.jcarousel-wrapper{
+  position: relative;
+}
+.header-bar {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding:5px 0;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.header-bar-left {
+  width: 45px;
+  flex-shrink: 0;
+  margin-left: 10px;
+  a:before{
+    background-image: url("../images/back.png");
+    background-repeat: no-repeat;
+    background-size:10px ;
+    background-position: 12px center;
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0
+  }
+
+
+}
+
+.header-bar-search {
+  flex-grow: 1;
+  margin-left: -20px;
+  margin-right: -10px;
+  margin-top: 5px;
+  input {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+}
+
+.header-bar-right {
+  width: 50px;
+  flex-shrink: 0;
+  margin-left: 10px;
+  margin-top: 5px;
+  a:before{
+    background-image: url("../images/ch.png");
+    background-repeat: no-repeat;
+    background-size:18px ;
+    background-position: 12px center;
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top:0
+  }
+}
+
+.header-catalog {
+  background-color: white;
+  padding:15px 10px;
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    li {
+      list-style: none;
+      text-align: center;
+      flex-grow: 1;
+      flex-basis: 25%;
+      span{
+        padding-top: 60px;
+        padding-bottom: 2px;
+        font-size: 10px;
+        text-align: center;
+        display: block;
+        background-position: center 8px;
+        background-repeat: no-repeat;
+        background-size: 40px;
+      }
+    }
+    .catalog {
+      background-size: 40px;
+      background-position: center 8px;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 80px;
+    }
+    .catalog01{
+      background-image: url("../images/01.png");
+    }   .catalog02{
+      background-image: url("../images/02.png");
+    }   .catalog03{
+      background-image: url("../images/03.png");
+    }   .catalog04{
+      background-image: url("../images/04.png");
+    }   .catalog05{
+      background-image: url("../images/05.png");
+    }   .catalog06{
+      background-image: url("../images/06.png");
+    }   .catalog07{
+      background-image: url("../images/07.png");
+    }   .catalog08{
+      background-image: url("../images/08.png");
+    }
+  }
+}
+.content{
+  background-color: gainsboro;
+  flex-grow: 1;
+  overflow-y: scroll;
+  margin-bottom: 54px;
+}
+
+
+.channel{
+  background-color: white;
+  display: flex;
+  .channel-cell{
+    flex-grow: 1;
+    padding: 5px;
+    img{
+      max-width: 100%;
+    }
+
+    .channel-title {
+      background-position: left 8px;
+      background-repeat: no-repeat;
+      font-size: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      & > span{
+        display: block;
+        font-size: 0.5rem;
+      }
+    }
+    .channel-status, .channel-countdown{color:orange}
+  }
+
+
+}
+.hidden{
+  display: none;
+}
+
+.activity{
+  background-color: white;
+  h2{
+    padding-left: 20px;
+    margin: 0;
+    font-size: 1rem;
+  }
+  h2:before{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    content: "";
+    background: url(../images/lv.png) no-repeat 0 0;
+    background-size: 100%;
+  }
+  div{
+    padding: 5px;
+    .activity-image img{
+      width: 100%;
+      height: 120px;
+    }
+    .activity-info{
+      display: flex;
+      justify-content: space-between;
+      align-items:flex-start;
+      a{
+        background-color: orange;
+        color:#FFF;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        padding: 4px;
+
+      }
+    }
+  }
+}
+
+
+.app-footer{
+  position: fixed ;
+  bottom: 0 ;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #FFF;
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      text-align: center;
+      flex: 1;
+      span{
+        padding-top: 40px;
+        padding-bottom: 2px;
+        font-size: 10px;
+        text-align: center;
+        display: block;
+        background-position: center 8px;
+        background-repeat: no-repeat;
+        background-size: 25px;
+      }
+    }
+  }
+}
+
+
+.tabbar-selected{
+  color:#FC645F;
+}
