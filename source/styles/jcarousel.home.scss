@@ -25,7 +25,7 @@
 }
 
 .jcarousel li {
-    height:180px;
+    height:3.43rem;
     float: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -34,7 +34,7 @@
 
 .jcarousel img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto !important;
 }
 
@@ -86,17 +86,15 @@
     display: inline-block;
 
     font-size: 11px;
-    height: 10px;
-    width: 10px;
+    height: 0.16rem;
+    width: 0.16rem;
     line-height: 10px;
 
     background: #fff;
     color: #4E443C;
     border-radius: 10px;
     text-indent: -9999px;
-
     margin-right: 7px;
-
 
     -webkit-box-shadow: 0 0 2px #4E443C;
     -moz-box-shadow: 0 0 2px #4E443C;
@@ -107,7 +105,6 @@
     background: #4E443C;
     color: #fff;
     opacity: 1;
-
     -webkit-box-shadow: 0 0 2px #F0EFE7;
     -moz-box-shadow: 0 0 2px #F0EFE7;
     box-shadow: 0 0 2px #F0EFE7;
