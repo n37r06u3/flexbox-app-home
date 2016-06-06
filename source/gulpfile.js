@@ -31,7 +31,7 @@ gulp.task('rebuild', ['cp'], function () {
 gulp.task('cp', function(){
   gulp.src('index.html')
       .pipe(gulp.dest('..'));
-  gulp.src('images/*')
+  gulp.src('images/**')
       .pipe(gulp.dest('../images/'));
   gulp.src('scripts/*')
       .pipe(gulp.dest('../scripts/'));
