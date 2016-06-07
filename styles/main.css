@@ -1,0 +1,285 @@
+body, p {
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+input {
+  outline: 0; }
+
+.app-wrap {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.jcarousel-wrapper {
+  position: relative; }
+
+.header-bar {
+  z-index: 999;
+  position: absolute;
+  top: 0.58rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header-bar-left {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin-left: 0.3rem;
+  margin-top: 0.04rem;
+  margin-right: 0.82rem; }
+  .header-bar-left:before {
+    background-image: url("../images/back.png");
+    background-repeat: no-repeat;
+    background-size: 0.2rem 0.38rem;
+    width: 0.20rem;
+    height: 0.38rem;
+    content: "";
+    position: absolute; }
+
+.header-bar-search {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 4.96rem;
+      flex-basis: 4.96rem;
+  font-size: 0.24rem;
+  line-height: 0.26rem;
+  height: 0.48rem;
+  border-radius: 0.24rem;
+  padding-left: 0.34rem;
+  border: none; }
+
+.header-bar-right {
+  width: 0.66rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin-top: 0.1rem;
+  margin-left: 0.56rem; }
+  .header-bar-right:before {
+    background-image: url("../images/ch.png");
+    background-repeat: no-repeat;
+    background-size: 0.36rem 0.28rem;
+    width: 0.36rem;
+    height: 0.28rem;
+    content: "";
+    position: absolute; }
+
+.header-catalog {
+  background-color: white;
+  padding: 0.14rem 0.2rem;
+  padding-bottom: 0.38rem; }
+  .header-catalog ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 0.26rem; }
+    .header-catalog ul li.catalog {
+      list-style: none;
+      text-align: center;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      font-size: 0.22rem;
+      color: #181818;
+      height: 1.18rem;
+      width: 1.2rem;
+      background-size: 0.84rem;
+      background-repeat: no-repeat;
+      background-position: center top;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .header-catalog ul .catalog01 {
+      background-image: url("../images/01.png"); }
+    .header-catalog ul .catalog02 {
+      background-image: url("../images/02.png"); }
+    .header-catalog ul .catalog03 {
+      background-image: url("../images/03.png"); }
+    .header-catalog ul .catalog04 {
+      background-image: url("../images/04.png"); }
+    .header-catalog ul .catalog05 {
+      background-image: url("../images/05.png"); }
+    .header-catalog ul .catalog06 {
+      background-image: url("../images/06.png"); }
+    .header-catalog ul .catalog07 {
+      background-image: url("../images/07.png"); }
+    .header-catalog ul .catalog08 {
+      background-image: url("../images/08.png"); }
+
+.channel {
+  margin-top: 0.18rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.17rem; }
+  .channel .channel-card {
+    margin-top: 0.34rem;
+    -ms-flex-preferred-size: 3.32rem;
+        flex-basis: 3.32rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 0 0.13rem; }
+    .channel .channel-card .channel-header {
+      background-position: left 8px;
+      background-repeat: no-repeat;
+      margin-bottom: 0.17rem;
+      font-size: 0.28rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .channel .channel-card .channel-header .channel-title {
+        font-size: 0.22rem;
+        color: #181818; }
+        .channel .channel-card .channel-header .channel-title p:before {
+          width: 0.30rem;
+          height: 0.30rem;
+          display: inline-block;
+          content: "";
+          background: url(../images/ms.png) no-repeat 0 center;
+          background-size: 0.30rem 0.30rem;
+          padding-right: 0.14rem; }
+        .channel .channel-card .channel-header .channel-title span {
+          display: block;
+          font-size: 0.2rem;
+          color: #6e6e6e; }
+      .channel .channel-card .channel-header .channel-status, .channel .channel-card .channel-header .channel-countdown {
+        font-size: 0.2rem;
+        color: #FD9E3F; }
+      .channel .channel-card .channel-header .hidden {
+        display: none; }
+    .channel .channel-card .channel-img {
+      width: 100%; }
+
+.activity h2 {
+  padding: 0.24rem 0.3rem 0.16rem 0.3rem;
+  margin: 0;
+  font-size: 0.28rem;
+  line-height: 0.28rem;
+  font-weight: normal; }
+  .activity h2:before {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.24rem;
+    content: "";
+    background: url(../images/lv.png) no-repeat 0 center;
+    background-size: 0.30rem 0.24rem;
+    padding-right: 0.14rem; }
+
+.activity .activity-body {
+  padding-top: 0.3rem;
+  background-color: white; }
+
+.activity .activity-card {
+  padding: 0 0.3rem 0.24rem 0.3rem; }
+  .activity .activity-card .activity-image {
+    width: 100%;
+    height: 2.8rem;
+    display: block; }
+  .activity .activity-card .activity-info {
+    padding-top: 0.22rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .activity .activity-card .activity-info div p {
+      font-size: 0.28rem;
+      color: #181818; }
+      .activity .activity-card .activity-info div p span {
+        display: block;
+        font-size: 0.22rem;
+        color: #6e6e6e; }
+    .activity .activity-card .activity-info a {
+      background-color: orange;
+      color: #FFF;
+      border-radius: 0.04rem;
+      padding: 0.08rem;
+      padding-left: 0.13rem;
+      font-size: 0.34rem;
+      width: 1.3rem;
+      height: 0.6rem; }
+      .activity .activity-card .activity-info a span {
+        font-size: 0.2rem; }
+
+.content {
+  margin-bottom: 1.06rem;
+  background-color: #EFEFEF; }
+
+.app-footer {
+  position: fixed;
+  border-top: 1px solid silver;
+  bottom: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  background-color: #FFF;
+  height: 1.06rem; }
+  .app-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0; }
+    .app-footer ul li {
+      list-style: none;
+      text-align: center;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      color: #6e6e6e; }
+      .app-footer ul li.tabbar-selected {
+        color: #FC645F; }
+      .app-footer ul li span {
+        padding-top: 0.58rem;
+        padding-bottom: 2px;
+        font-size: 0.2rem;
+        text-align: center;
+        display: block;
+        background-position: center 8px;
+        background-repeat: no-repeat;
+        background-size: 0.48rem  0.48rem; }
+        .app-footer ul li span.tab01 {
+          background-image: url(../images/sy.png); }
+        .app-footer ul li span.tab02 {
+          background-image: url(../images/ss.png); }
+        .app-footer ul li span.tab03 {
+          background-image: url("../images/fl.png"); }
+        .app-footer ul li span.tab04 {
+          background-image: url(../images/r.png); }
