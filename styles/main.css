@@ -181,7 +181,7 @@ input {
       .channel .channel-card .channel-header .hidden {
         display: none; }
     .channel .channel-card .channel-img {
-      width: 100%; }
+      max-width: 100%; }
 
 .activity h2 {
   padding: 0.24rem 0.3rem 0.16rem 0.3rem;
@@ -226,7 +226,7 @@ input {
         display: block;
         font-size: 0.22rem;
         color: #6e6e6e; }
-    .activity .activity-card .activity-info a {
+    .activity .activity-card .activity-info .activity-cost {
       background-color: orange;
       color: #FFF;
       border-radius: 0.04rem;
@@ -235,7 +235,7 @@ input {
       font-size: 0.34rem;
       width: 1.3rem;
       height: 0.6rem; }
-      .activity .activity-card .activity-info a span {
+      .activity .activity-card .activity-info .activity-cost span {
         font-size: 0.2rem; }
 
 .content {
