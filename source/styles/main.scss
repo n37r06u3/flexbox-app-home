@@ -15,55 +15,56 @@
 .header-bar {
   z-index: 999;
   position: absolute;
-  top: 0.58rem;
+  top: 0.20rem;
   width: 100%;
   display: flex;
-}
 
-.header-bar-left {
-  flex-grow: 0;
-  margin-left: 0.3rem;
-  margin-top: 0.04rem;
-  margin-right: 0.82rem;
-  &:before{
-    background-image: url("../images/back.png");
-    background-repeat: no-repeat;
-    background-size:0.2rem 0.38rem;
-    width: 0.20rem;
-    height: 0.38rem;
-    content: "";
-    position: absolute;
+  .header-bar-left {
+    flex-grow: 0;
+    margin-left: 0.3rem;
+    margin-top: 0.04rem;
+    margin-right: 0.82rem;
+    &:before{
+      background-image: url("../images/back.png");
+      background-repeat: no-repeat;
+      background-size:0.2rem 0.38rem;
+      width: 0.20rem;
+      height: 0.38rem;
+      content: "";
+      position: absolute;
+    }
+
+
   }
 
-
-}
-
-.header-bar-search {
-  flex-grow: 1;
-  flex-basis: 4.96rem;
-  font-size: 0.24rem;
-  line-height: 0.26rem;
-  height: 0.48rem;
-  border-radius: 0.24rem;
-  padding-left: 0.34rem;
-  border: none;
-}
-
-.header-bar-right {
-  width: 0.66rem;
-  flex-shrink: 0;
-  flex-grow: 0;
-  margin-top: 0.1rem;
-  margin-left: 0.56rem;
-  &:before{
-    background-image: url("../images/ch.png");
-    background-repeat: no-repeat;
-    background-size:0.36rem 0.28rem;
-    width: 0.36rem;
-    height: 0.28rem;
-    content: "";
-    position: absolute;
+  .header-bar-search {
+    flex-grow: 1;
+    flex-basis: 4.96rem;
+    font-size: 0.24rem;
+    line-height: 0.26rem;
+    height: 0.48rem;
+    border-radius: 0.24rem;
+    padding-left: 0.34rem;
+    border: none;
   }
+
+  .header-bar-right {
+    width: 0.66rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-top: 0.1rem;
+    margin-left: 0.56rem;
+    &:before{
+      background-image: url("../images/ch.png");
+      background-repeat: no-repeat;
+      background-size:0.36rem 0.28rem;
+      width: 0.36rem;
+      height: 0.28rem;
+      content: "";
+      position: absolute;
+    }
+  }
+
 }
 
 .header-catalog {
@@ -159,7 +160,7 @@
     }
 
     .channel-img{
-      max-width: 100%;
+      width: 100%;
     }
   }
 
