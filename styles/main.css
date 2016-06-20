@@ -51,13 +51,16 @@ input {
         -ms-flex-positive: 1;
             flex-grow: 1;
     -ms-flex-preferred-size: 4.96rem;
-        flex-basis: 4.96rem;
-    font-size: 0.24rem;
-    line-height: 0.26rem;
-    height: 0.48rem;
-    border-radius: 0.24rem;
-    padding-left: 0.34rem;
-    border: none; }
+        flex-basis: 4.96rem; }
+    .header-bar .header-bar-search input {
+      display: block;
+      line-height: 0.26rem;
+      height: 0.48rem;
+      border-radius: 0.24rem;
+      padding-left: 0.34rem;
+      border: none;
+      width: 99%;
+      font-size: 0.24rem; }
   .header-bar .header-bar-right {
     width: 0.66rem;
     -ms-flex-negative: 0;

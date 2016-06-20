@@ -33,19 +33,21 @@
       content: "";
       position: absolute;
     }
-
-
   }
 
   .header-bar-search {
     flex-grow: 1;
     flex-basis: 4.96rem;
-    font-size: 0.24rem;
-    line-height: 0.26rem;
-    height: 0.48rem;
-    border-radius: 0.24rem;
-    padding-left: 0.34rem;
-    border: none;
+    input{
+      display: block;
+      line-height: 0.26rem;
+      height: 0.48rem;
+      border-radius: 0.24rem;
+      padding-left: 0.34rem;
+      border: none;
+      width: 99%;
+      font-size: 0.24rem;
+    }
   }
 
   .header-bar-right {
