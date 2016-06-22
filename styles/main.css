@@ -181,7 +181,8 @@ input {
       .channel .channel-card .channel-header .hidden {
         display: none; }
     .channel .channel-card .channel-img {
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
 
 .activity h2 {
   padding: 0.24rem 0.3rem 0.16rem 0.3rem;
@@ -191,7 +192,7 @@ input {
   font-weight: normal; }
   .activity h2:before {
     display: inline-block;
-    width: 0.3rem;
+    width: 0.31rem;
     height: 0.24rem;
     content: "";
     background: url(../images/lv.png) no-repeat 0 center;
@@ -233,8 +234,9 @@ input {
       padding: 0.08rem;
       padding-left: 0.13rem;
       font-size: 0.34rem;
-      width: 1.3rem;
-      height: 0.6rem; }
+      height: 0.6rem;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
       .activity .activity-card .activity-info .activity-cost span {
         font-size: 0.2rem; }
 
@@ -264,9 +266,7 @@ input {
           -ms-flex: 1;
               flex: 1;
       color: #6e6e6e; }
-      .app-footer ul li.tabbar-selected {
-        color: #FC645F; }
-      .app-footer ul li span {
+      .app-footer ul li a {
         padding-top: 0.58rem;
         padding-bottom: 2px;
         font-size: 0.2rem;
@@ -275,11 +275,21 @@ input {
         background-position: center 8px;
         background-repeat: no-repeat;
         background-size: 0.48rem  0.48rem; }
-        .app-footer ul li span.tab01 {
+        .app-footer ul li a.tab01 {
           background-image: url(../images/sy.png); }
-        .app-footer ul li span.tab02 {
+        .app-footer ul li a.tab02 {
           background-image: url(../images/ss.png); }
-        .app-footer ul li span.tab03 {
+        .app-footer ul li a.tab03 {
           background-image: url("../images/fl.png"); }
-        .app-footer ul li span.tab04 {
+        .app-footer ul li a.tab04 {
           background-image: url(../images/r.png); }
+        .app-footer ul li a:link {
+          color: #6e6e6e; }
+        .app-footer ul li a:visited {
+          color: #6e6e6e; }
+        .app-footer ul li a:hover {
+          color: #FC645F; }
+        .app-footer ul li a:active {
+          color: #FC645F; }
+        .app-footer ul li a.tabbar-selected {
+          color: #FC645F; }

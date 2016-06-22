@@ -163,6 +163,7 @@
 
     .channel-img{
       width: 100%;
+      height: 100%;
     }
   }
 
@@ -177,7 +178,7 @@
     font-weight: normal;
     &:before{
       display: inline-block;
-      width: 0.3rem;
+      width: 0.31rem;
       height: 0.24rem;
       content: "";
       background: url(../images/lv.png) no-repeat 0 center;
@@ -219,8 +220,8 @@
         padding: 0.08rem;
         padding-left: 0.13rem;
         font-size: 0.34rem;
-        width: 1.3rem;
         height: 0.6rem;
+        flex-shrink: 0;
         span{
           font-size: 0.2rem;
         }
@@ -232,7 +233,6 @@
 .content{
   margin-bottom: 1.06rem;
   background-color: #EFEFEF;
-
 }
 
 .app-footer{
@@ -243,7 +243,6 @@
   width: 100%;
   background-color: #FFF;
   height: 1.06rem;
-
   ul {
     display: flex;
     padding: 0;
@@ -253,10 +252,9 @@
       text-align: center;
       flex: 1;
       color:#6e6e6e;
-      &.tabbar-selected{
-        color:#FC645F;
-      }
-      span{
+
+
+      a{
         padding-top: 0.58rem;
         padding-bottom: 2px;
         font-size: 0.2rem;
@@ -276,6 +274,21 @@
         }
         &.tab04{
           background-image: url(../images/r.png)
+        }
+        &:link{
+          color:#6e6e6e;
+        }
+        &:visited{
+          color:#6e6e6e;
+        }
+        &:hover{
+          color:#FC645F;
+        }
+        &:active {
+          color:#FC645F;
+        }
+        &.tabbar-selected{
+          color:#FC645F;
         }
       }
     }
