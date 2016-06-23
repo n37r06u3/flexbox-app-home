@@ -164,7 +164,7 @@ input {
         font-size: 0.22rem;
         color: #181818; }
         .channel .channel-card .channel-header .channel-title p:before {
-          width: 0.30rem;
+          width: 0.31rem;
           height: 0.30rem;
           display: inline-block;
           content: "";
@@ -182,7 +182,7 @@ input {
         display: none; }
     .channel .channel-card .channel-img {
       width: 100%;
-      height: 100%; }
+      border: 0.01rem solid #6e6e6e; }
 
 .activity h2 {
   padding: 0.24rem 0.3rem 0.16rem 0.3rem;
