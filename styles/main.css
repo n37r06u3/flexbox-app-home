@@ -267,8 +267,7 @@ input {
               flex: 1;
       color: #6e6e6e; }
       .app-footer ul li a {
-        padding-top: 0.58rem;
-        padding-bottom: 2px;
+        padding-top: 0.6rem;
         font-size: 0.2rem;
         text-align: center;
         display: block;
